@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +12,7 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   color: #1c1c1c;
   line-height: 1.5;
+  background: #ffffff;
 }
 
 a {
@@ -15,27 +20,43 @@ a {
   color: inherit;
 }
 
+
+/* =====================================================
+   HEADER
+===================================================== */
+
 .header {
   height: 100px;
   max-width: 100%;
   background: rgb(13, 15, 13);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 
+/* =====================================================
+   LOGO
+===================================================== */
+
 .logo {
   height: 100%;
   width: 50%;
+
   font-size: 22px;
   font-weight: 700;
+
   color: #fffdfd;
+
   padding-left: 50px;
+
   float: left;
+
   display: flex;
   align-items: center;
 }
@@ -44,12 +65,20 @@ a {
   color: #2f6fed;
 }
 
+
+/* =====================================================
+   RIGHT NAVIGATION
+===================================================== */
+
 .right-nav {
   height: 100px;
   width: 50%;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  gap: 20px;
 }
 
 .icons-group {
@@ -58,23 +87,39 @@ a {
   gap: 16px;
 }
 
+
+/* =====================================================
+   MENU ICON
+===================================================== */
+
 #bars {
   color: white;
   font-size: 24px;
+
   cursor: pointer;
+
   display: none;
 }
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
 
 .nav {
   font-size: 20px;
   font-weight: 500;
+
   color: white;
+
   float: right;
 }
 
 .nav a {
   color: #fdfafa;
+
   padding: 20px;
+
   transition: color 0.2s ease;
 }
 
@@ -82,123 +127,539 @@ a {
   color: #2f6fed;
 }
 
+
+/* =====================================================
+   HOME / BANNER
+===================================================== */
+
 .banner {
   max-width: 100%;
-  height: 100%;
+
+  min-height: calc(100vh - 100px);
+
   margin: 0 auto;
-  padding: 100px 24px;
+
+  padding: 40px 24px;
+
   text-align: center;
 
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .banner h1 {
   font-size: 44px;
+
   font-weight: 800;
+
   margin-bottom: 18px;
+
   color: #0f5cd8;
 }
 
 .banner p {
+  max-width: 750px;
+
   font-size: 17px;
+
   color: #555;
+
   margin-bottom: 32px;
 }
 
+
+/* =====================================================
+   PRIMARY BUTTON
+===================================================== */
+
 .btn-primary {
   display: inline-block;
+
   background: #2f6fed;
+
   color: #fff;
+
   padding: 14px 32px;
+
   border-radius: 6px;
+
   font-weight: 600;
+
   font-size: 15px;
-  transition: transform 0.15s ease, background 0.2s ease;
+
+  transition:
+    transform 0.15s ease,
+    background 0.2s ease;
 }
 
 .btn-primary:hover {
   background: #1d4fc4;
+
   transform: scale(1.04);
 }
 
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
 .about {
   max-width: 900px;
+
+  min-height: calc(100vh - 100px);
+
   margin: 0 auto;
-  padding: 60px 24px;
+
+  padding: 40px 24px;
+
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
 }
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
 
 .services {
   max-width: 1140px;
+
+  min-height: calc(100vh - 100px);
+
   margin: 0 auto;
-  padding: 90px 24px;
+
+  padding: 40px 24px 80px;
+
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .services-h2 {
   font-size: 32px;
+
   font-weight: 700;
+
   margin-bottom: 8px;
 }
 
 .services-p {
   color: #666;
+
   margin-bottom: 48px;
 }
 
 .services-grid {
+  width: 100%;
+
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
+
   gap: 28px;
 }
 
+
+/* =====================================================
+   SERVICE CARD
+===================================================== */
+
 .service-card {
   background: #f6eeee;
+
   border: 1px solid #423b3b;
+
   border-radius: 10px;
+
   color: #1c1c1c;
+
   padding: 36px 24px;
+
   text-align: left;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 .service-card:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.08);
+
   transform: translateY(-4px);
 }
 
 .service-card .icon {
   font-size: 30px;
+
   margin-bottom: 14px;
 }
 
 .service-card h3 {
   font-size: 19px;
+
   margin-bottom: 10px;
 }
 
 .service-card p {
   font-size: 14.5px;
+
   color: #666;
 }
 
-.footer {
-  height: 100%;
-  max-width: 100%;
-  padding: 18px;
-  margin: 0 auto;
-  background: rgb(15, 14, 14);
+
+/* =====================================================
+   CONTACT US
+===================================================== */
+
+.contact-section {
+  width: 100%;
+
+  min-height: calc(100vh - 100px);
+
+  padding: 80px 24px;
+
+  background: #f8f9fc;
+
   display: flex;
+
   align-items: center;
+
+  justify-content: center;
+}
+
+.contact-container {
+  width: 100%;
+
+  max-width: 1140px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+
+/* =====================================================
+   CONTACT INFORMATION
+===================================================== */
+
+.contact-info {
+  padding: 20px;
+}
+
+.contact-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #2f6fed;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.contact-info h2 {
+  font-size: 42px;
+
+  line-height: 1.2;
+
+  color: #1c1c1c;
+
+  margin-bottom: 18px;
+}
+
+.contact-info h2 span {
+  color: #2f6fed;
+}
+
+.contact-description {
+  max-width: 520px;
+
+  color: #666;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+}
+
+
+/* =====================================================
+   CONTACT DETAILS
+===================================================== */
+
+.contact-details {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+.contact-icon {
+  width: 48px;
+
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #eaf1ff;
+
+  color: #2f6fed;
+
+  font-size: 18px;
+
+  flex-shrink: 0;
+}
+
+.contact-item h4 {
+  font-size: 16px;
+
+  margin-bottom: 3px;
+
+  color: #1c1c1c;
+}
+
+.contact-item p {
+  font-size: 14px;
+
+  color: #666;
+}
+
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+.contact-form-container {
+  width: 100%;
+}
+
+.contact-form {
+  width: 100%;
+
+  padding: 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #e1e4ea;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h3 {
+  font-size: 25px;
+
+  margin-bottom: 25px;
+
+  color: #1c1c1c;
+}
+
+
+/* =====================================================
+   FORM GROUP
+===================================================== */
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #333;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   INPUT & TEXTAREA
+===================================================== */
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  border: 1px solid #d8dce3;
+
+  border-radius: 6px;
+
+  outline: none;
+
+  background: #fff;
+
+  color: #1c1c1c;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group textarea {
+  min-height: 120px;
+
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2f6fed;
+
+  box-shadow:
+    0 0 0 3px rgba(47, 111, 237, 0.1);
+}
+
+
+/* =====================================================
+   CONTACT BUTTON
+===================================================== */
+
+.contact-btn {
+  width: 100%;
+
+  border: none;
+
+  padding: 14px 20px;
+
+  border-radius: 6px;
+
+  background: #2f6fed;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+.contact-btn:hover {
+  background: #1d4fc4;
+
+  transform: translateY(-2px);
+}
+
+.contact-btn:active {
+  transform: translateY(0);
+}
+
+
+/* =====================================================
+   FORM MESSAGE
+===================================================== */
+
+#formMessage {
+  text-align: center;
+
+  margin-top: 14px;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+  max-width: 100%;
+
+  padding: 18px;
+
+  margin: 0 auto;
+
+  background: rgb(15, 14, 14);
+
+  display: flex;
+
+  align-items: center;
+
   justify-content: space-between;
 }
 
 .copy-right {
   font-size: 15px;
+
   font-weight: 700;
+
   color: #fffdfd;
+
   padding-left: 50px;
+
   float: left;
-  font-family: 'Courier New', Courier, monospace;
+
+  font-family:
+    'Courier New',
+    Courier,
+    monospace;
 }
 
 .copy-right span {
@@ -207,25 +668,38 @@ a {
 
 .social-media {
   font-size: 20px;
+
   font-weight: 500;
+
   padding-right: 50px;
+
   color: white;
+
   float: right;
 }
 
 .social-media a {
   color: #fdfafa;
+
   padding: 20px;
+
   transition: color 0.2s ease;
 }
 
 .social-media a:hover {
-  color: #e1c50b;
+  color: #2f6fed;
 }
+
+
+/* =====================================================
+   THEME ICON
+===================================================== */
 
 #icon {
   font-size: 24px;
+
   color: white;
+
   cursor: pointer;
 }
 
@@ -233,47 +707,91 @@ a {
   color: yellow;
 }
 
+
+/* =====================================================
+   ACTIVE
+===================================================== */
+
 .active {
   background-color: rgba(8, 8, 8, 0.938);
+
   cursor: pointer;
+
   color: white;
 }
 
+
+/* =====================================================
+   TABLET / MOBILE
+===================================================== */
+
 @media (max-width: 768px) {
+
+  /* HEADER */
+
   .header {
     height: auto;
+
     flex-wrap: wrap;
+
     padding: 16px 20px;
-    position: relative;
+
+    position: sticky;
   }
+
+
+  /* LOGO */
 
   .logo {
     padding-left: 0;
+
     width: auto;
+
     height: auto;
   }
 
+
+  /* RIGHT NAV */
+
   .right-nav {
     height: auto;
+
     width: auto;
   }
+
+
+  /* HAMBURGER */
 
   #bars {
     display: block;
   }
 
+
+  /* MOBILE NAV */
+
   .nav {
     position: absolute;
+
     top: 100%;
+
     right: 0;
+
     width: 25%;
+
     min-width: 160px;
+
     background: rgb(13, 15, 13);
+
     text-align: center;
+
     display: none;
+
     flex-direction: column;
+
     align-items: center;
+
     gap: 0;
+
     z-index: 99;
   }
 
@@ -283,30 +801,166 @@ a {
 
   .nav a {
     padding: 14px 0;
+
     width: 100%;
+
     font-size: 14px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-top:
+      1px solid rgba(255, 255, 255, 0.1);
+  }
+
+
+  /* HOME */
+
+  .banner {
+    min-height:
+      calc(100dvh - 140px);
+
+    padding: 40px 20px;
   }
 
   .banner h1 {
     font-size: 32px;
   }
 
+  .banner p {
+    font-size: 15px;
+  }
+
+
+  /* ABOUT */
+
+  .about {
+    min-height:
+      calc(100dvh - 140px);
+
+    padding: 40px 20px;
+  }
+
+
+  /* SERVICES */
+
+  .services {
+    min-height:
+      calc(100dvh - 140px);
+
+    padding:
+      40px 20px 60px;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
   }
 
+
+  /* CONTACT */
+
+  .contact-section {
+    min-height: auto;
+
+    padding: 70px 20px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .contact-info {
+    padding: 0;
+  }
+
+  .contact-info h2 {
+    font-size: 36px;
+  }
+
+  .contact-description {
+    font-size: 15px;
+  }
+
+
+  /* FOOTER */
+
   .footer {
     flex-direction: column;
+
     height: auto;
+
     gap: 12px;
+
     text-align: center;
   }
 
   .copy-right,
   .social-media {
     padding-left: 0;
+
     padding-right: 0;
+
     float: none;
   }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .banner h1 {
+    font-size: 28px;
+  }
+
+  .banner p {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    padding: 12px 25px;
+  }
+
+
+  .contact-section {
+    padding: 55px 20px;
+  }
+
+  .contact-info h2 {
+    font-size: 30px;
+  }
+
+  .contact-label {
+    font-size: 12px;
+  }
+
+  .contact-description {
+    font-size: 14px;
+  }
+
+  .contact-form {
+    padding: 25px 20px;
+  }
+
+  .contact-form h3 {
+    font-size: 21px;
+  }
+
+  .contact-item {
+    align-items: flex-start;
+  }
+
+  .contact-icon {
+    width: 44px;
+
+    height: 44px;
+  }
+
+
+  .social-media a {
+    padding: 10px;
+  }
+
 }
