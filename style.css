@@ -331,7 +331,7 @@ a {
   align-items: center;
   padding: 30px 8%;
   background: var(--card);
-  box-shadow: 0 -5px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -5px 8px rgba(20, 30, 45, 0.1);
   margin-top: 50px;
 }
 
@@ -371,6 +371,7 @@ a {
 
 .social-media img{
   margin: 2px;
+  box-shadow: 5px 5px 5px yellow,-5px -5px 8px yellow;
 }
 
 /*  TABLET */
