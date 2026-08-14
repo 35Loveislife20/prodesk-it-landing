@@ -120,6 +120,13 @@ a {
   transform: scale(1.04);
 }
 
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  text-align: center;
+}
+
 .services {
   max-width: 1140px;
   margin: 0 auto;
