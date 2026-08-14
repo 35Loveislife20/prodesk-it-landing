@@ -10,120 +10,192 @@
 </head>
 
 <body>
-  <div class="header">
-    <div class="logo">
-      <h1><a href="#home">Prodesk<span>IT</span></a></h1>
-    </div>
-    <div class="right-nav">
-      <div class="icons-group">
-        <span id="icon">☀️</span> <!-- default dark hai to sun -->
-        <span id="bars">☰</span>
+  <div>
+    <div class="header">
+      <div class="logo">
+        <h1>
+          <a href="#">Prodesk<span>IT</span></a>
+        </h1>
       </div>
-      <div class="nav" id="nav">
-        <a href="#home" data-target="home" class="active">Home</a>
-        <a href="#about" data-target="about">About</a>
-        <a href="#services" data-target="services">Services</a>
-        <a href="#contact" data-target="contact">Contact</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="banner" id="home">
-    <h1>We Build Digital Experiences</h1>
-    <p>Prodesk IT helps brands grow online with smart web design, development and marketing that actually converts.
-    </p>
-    <a href="#contact" class="btn-primary">Get Started</a> <!-- #contact kiya -->
-  </div>
+      <div class="right-nav">
+        <div class="icons-group">
+          <i id="icon" class="fa-solid fa-moon"></i>
+          <i id="bars" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav" id="nav">
+          <a href="#home" data-target="home">Home</a>
+          <a href="#about" data-target="about">About</a>
+          <a href="#services" data-target="services">Services</a>
+          <a href="#contact" data-target="contact">Contact</a>
+        </div>
 
-  <div class="about" id="about">
-    <h2 class="services-h2">About Us</h2>
-    <p class="services-p">Prodesk IT is a digital marketing wing helping brands build a strong online presence
-      through smart design, development, and strategy.</p>
-  </div>
-
-  <div class="services" id="services">
-    <h2 class="services-h2">Services</h2>
-    <p class="services-p">A few things we're really good at</p>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="icon">🔍</div>
-        <h3>SEO</h3>
-        <p>We get your website ranking where people can actually find it, using strategies that hold up long
-          term.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon">💻</div>
-        <h3>Web Development</h3>
-        <p>Fast, responsive websites built with clean code — no bloated templates, just what your business
-          needs.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon">📊</div>
-        <h3>Marketing</h3>
-        <p>From social to email campaigns, we help you reach the right audience without wasting your ad budget.
-        </p>
       </div>
     </div>
-  </div>
+    <div class="banner" id="home">
+      <h1>We Build Digital Experiences</h1>
+      <p>Prodesk IT helps brands grow online with smart web design, development and marketing that actually converts.
+      </p>
+      <a href="#" class="btn-primary">Get Started</a>
+    </div>
 
-  <div class="contact-section" id="contact">
-    <div class="contact-container">
-      <div class="contact-info">
-        <span class="contact-label">GET IN TOUCH</span>
-        <h2>Let's Build Something <span>Great Together.</span></h2>
-        <p>Have a project in mind or want to grow your business online? Contact Prodesk IT and let's discuss how
-          we can help your brand achieve its digital goals.</p>
-        <div class="contact-details">
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-            <div>
-              <h4>Email</h4>
-              <p>info@prodeskit.com</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-            <div>
-              <h4>Phone</h4>
-              <p>+91 98765 43210</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div>
-              <h4>Location</h4>
-              <p>India</p>
-            </div>
-          </div>
+    <div class="about" id="about">
+      <h2 class="services-h2">About Us</h2>
+      <p class="services-p">Prodesk IT is a digital marketing wing helping brands build a strong online presence through
+        smart design, development, and strategy.</p>
+    </div>
+
+    <div class="services" id="services">
+      <h2 class="services-h2">Services</h2>
+      <p class="services-p">A few things we're really good at</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon">🔍</div>
+          <h3>SEO</h3>
+          <p>We get your website ranking where people can actually find it, using strategies that hold up long term.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">💻</div>
+          <h3>Web Development</h3>
+          <p>Fast, responsive websites built with clean code — no bloated templates, just what your business needs.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">📊</div>
+          <h3>Marketing</h3>
+          <p>From social to email campaigns, we help you reach the right audience without wasting your ad budget.</p>
         </div>
       </div>
-      <div class="contact-form-container">
-        <form id="contactForm" class="contact-form">
-          <h3>Send Us a Message</h3>
-          <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name"
-              placeholder="Enter your name" required></div>
-          <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email"
-              placeholder="Enter your email" required></div>
-          <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject"
-              placeholder="Enter subject" required></div>
-          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5"
-              placeholder="Write your message..." required></textarea></div>
-          <button type="submit" class="contact-btn">Send Message ✈️</button>
-          <p id="formMessage"></p>
-        </form>
-      </div>
     </div>
-  </div>
 
-  <div class="footer" id="footer">
-    <div class="copy-right">
-      <h4>© 2026 Prodesk IT.<span> All rights reserved.</span></h4>
-    </div>
-    <div class="social-media">
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    <div class="contact-section" id="contact">
+
+      <div class="contact-container">
+
+       
+        <div class="contact-info">
+
+          <span class="contact-label">GET IN TOUCH</span>
+
+          <h2>Let's Build Something <span>Great Together.</span></h2>
+
+          <p>
+            Have a project in mind or want to grow your business online?
+            Contact Prodesk IT and let's discuss how we can help your brand
+            achieve its digital goals.
+          </p>
+
+          <div class="contact-details">
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+
+              <div>
+                <h4>Email</h4>
+                <p>info@prodeskit.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+
+              <div>
+                <h4>Phone</h4>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+
+              <div>
+                <h4>Location</h4>
+                <p>India</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+       
+        <div class="contact-form-container">
+
+          <form id="contactForm" class="contact-form">
+
+            <h3>Send Us a Message</h3>
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">
+              Send Message
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <p id="formMessage"></p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="footer" id="contact">
+      <div class="copy-right">
+        <h4>
+          <div class="icon">
+            <i class="fa-regular fa-copyright"></i>2026 Prodesk IT.<span> All rights reserved.</span>
+          </div>
+        </h4>
+
+      </div>
+      <div class="social-media">
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
