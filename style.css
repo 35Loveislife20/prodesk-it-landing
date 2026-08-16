@@ -465,7 +465,7 @@ a {
     display: flex;
   }
 
-  /* HERO */
+  /* MAIN */
   .banner {
     padding: 130px 5% 80px;
   }
@@ -478,7 +478,7 @@ a {
     font-size: 16px;
   }
 
-  /* SECTIONS */
+  /* SERVICES */
   .services,
   .about,
   .contact-section {
