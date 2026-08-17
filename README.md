@@ -81,6 +81,11 @@ Steps followed:
 
 ---
 
+## 🎥 Demo Video
+👉 **[Watch Demo Video](https://drive.google.com/file/d/1F_I1WtBBH_JBcsKN6uHFY1tzEGM_S7mZ/view?usp=drive_link)**
+
+---
+
 ## 📝 AI Usage
 
 All AI interactions during development are logged in [`Prompts.md`](./Prompts.md) as required by sprint policy.
