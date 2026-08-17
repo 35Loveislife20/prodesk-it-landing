@@ -15,7 +15,7 @@ A fully responsive corporate landing page built for **Prodesk IT**, a digital ma
 > _(Add a screenshot of your deployed site here)_
 > 
 > To add: Take a screenshot → upload to your GitHub repo → replace this line with:
-> `![Prodesk IT Landing Page](./screenshot.png)`
+> `![Prodesk IT Landing Page](./icon/screenshot.png)`
 
 ---
 
@@ -64,7 +64,7 @@ prodesk-it/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/prodesk-it-landing.git
+git clone https://github.com/35Loveislife20/prodesk-it-landing.git
 
 # Open in browser
 # Simply open index.html in your browser
@@ -92,7 +92,7 @@ All AI interactions during development are logged in [`Prompts.md`](./Prompts.md
 
 ## 👤 Author
 
-**[Your Name]** — Prodesk IT Associate, Week 1 Sprint 1
+**Satish Kumar** — Prodesk IT Associate, Week 1 Sprint 1
 
 ---
 
