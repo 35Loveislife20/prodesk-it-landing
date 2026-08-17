@@ -15,7 +15,7 @@ A fully responsive corporate landing page built for **Prodesk IT**, a digital ma
 > _(Add a screenshot of your deployed site here)_
 > 
 > To add: Take a screenshot → upload to your GitHub repo → replace this line with:
-> `![Prodesk IT Landing Page](./icons/screenshot.png.jpg)`
+> `![Prodesk IT Landing Page](./icons/screenshot.png)`
 
 ---
 
